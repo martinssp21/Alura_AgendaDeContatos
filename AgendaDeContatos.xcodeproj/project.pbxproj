@@ -16,6 +16,7 @@
 		A506700F227CB0DF00EF75F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A506700E227CB0DF00EF75F0 /* main.m */; };
 		A5067019227CB0DF00EF75F0 /* AgendaDeContatosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5067018227CB0DF00EF75F0 /* AgendaDeContatosTests.m */; };
 		A5067024227CB0DF00EF75F0 /* AgendaDeContatosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5067023227CB0DF00EF75F0 /* AgendaDeContatosUITests.m */; };
+		A593C5CC227CBD8E0010C002 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = A593C5CB227CBD8E0010C002 /* Contato.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		A506701F227CB0DF00EF75F0 /* AgendaDeContatosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaDeContatosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5067023227CB0DF00EF75F0 /* AgendaDeContatosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgendaDeContatosUITests.m; sourceTree = "<group>"; };
 		A5067025227CB0DF00EF75F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A593C5CA227CBD8E0010C002 /* Contato.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
+		A593C5CB227CBD8E0010C002 /* Contato.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 				A506700D227CB0DF00EF75F0 /* Info.plist */,
 				A506700E227CB0DF00EF75F0 /* main.m */,
 				A5067005227CB0DC00EF75F0 /* AgendaDeContatos.xcdatamodeld */,
+				A593C5CA227CBD8E0010C002 /* Contato.h */,
+				A593C5CB227CBD8E0010C002 /* Contato.m */,
 			);
 			path = AgendaDeContatos;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A593C5CC227CBD8E0010C002 /* Contato.m in Sources */,
 				A5067001227CB0DC00EF75F0 /* ViewController.m in Sources */,
 				A5067007227CB0DC00EF75F0 /* AgendaDeContatos.xcdatamodeld in Sources */,
 				A506700F227CB0DF00EF75F0 /* main.m in Sources */,
