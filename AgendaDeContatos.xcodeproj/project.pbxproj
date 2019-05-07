@@ -16,7 +16,9 @@
 		A506700F227CB0DF00EF75F0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A506700E227CB0DF00EF75F0 /* main.m */; };
 		A5067019227CB0DF00EF75F0 /* AgendaDeContatosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5067018227CB0DF00EF75F0 /* AgendaDeContatosTests.m */; };
 		A5067024227CB0DF00EF75F0 /* AgendaDeContatosUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5067023227CB0DF00EF75F0 /* AgendaDeContatosUITests.m */; };
+		A50BD725228099CA00501340 /* ContatoDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = A50BD724228099CA00501340 /* ContatoDAO.m */; };
 		A593C5CC227CBD8E0010C002 /* Contato.m in Sources */ = {isa = PBXBuildFile; fileRef = A593C5CB227CBD8E0010C002 /* Contato.m */; };
+		A593C5D0227CC8200010C002 /* ListaDeContatosTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A593C5CF227CC8200010C002 /* ListaDeContatosTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,8 +56,12 @@
 		A506701F227CB0DF00EF75F0 /* AgendaDeContatosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgendaDeContatosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5067023227CB0DF00EF75F0 /* AgendaDeContatosUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AgendaDeContatosUITests.m; sourceTree = "<group>"; };
 		A5067025227CB0DF00EF75F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50BD723228099CA00501340 /* ContatoDAO.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContatoDAO.h; sourceTree = "<group>"; };
+		A50BD724228099CA00501340 /* ContatoDAO.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContatoDAO.m; sourceTree = "<group>"; };
 		A593C5CA227CBD8E0010C002 /* Contato.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Contato.h; sourceTree = "<group>"; };
 		A593C5CB227CBD8E0010C002 /* Contato.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contato.m; sourceTree = "<group>"; };
+		A593C5CE227CC8200010C002 /* ListaDeContatosTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListaDeContatosTableViewController.h; sourceTree = "<group>"; };
+		A593C5CF227CC8200010C002 /* ListaDeContatosTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListaDeContatosTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,18 +112,16 @@
 		A5066FFB227CB0DC00EF75F0 /* AgendaDeContatos */ = {
 			isa = PBXGroup;
 			children = (
+				A50BD72222806FAD00501340 /* Model */,
+				A593C5CD227CC7D10010C002 /* Controller */,
 				A5066FFC227CB0DC00EF75F0 /* AppDelegate.h */,
 				A5066FFD227CB0DC00EF75F0 /* AppDelegate.m */,
-				A5066FFF227CB0DC00EF75F0 /* ViewController.h */,
-				A5067000227CB0DC00EF75F0 /* ViewController.m */,
 				A5067002227CB0DC00EF75F0 /* Main.storyboard */,
 				A5067008227CB0DF00EF75F0 /* Assets.xcassets */,
 				A506700A227CB0DF00EF75F0 /* LaunchScreen.storyboard */,
 				A506700D227CB0DF00EF75F0 /* Info.plist */,
 				A506700E227CB0DF00EF75F0 /* main.m */,
 				A5067005227CB0DC00EF75F0 /* AgendaDeContatos.xcdatamodeld */,
-				A593C5CA227CBD8E0010C002 /* Contato.h */,
-				A593C5CB227CBD8E0010C002 /* Contato.m */,
 			);
 			path = AgendaDeContatos;
 			sourceTree = "<group>";
@@ -138,6 +142,28 @@
 				A5067025227CB0DF00EF75F0 /* Info.plist */,
 			);
 			path = AgendaDeContatosUITests;
+			sourceTree = "<group>";
+		};
+		A50BD72222806FAD00501340 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A593C5CA227CBD8E0010C002 /* Contato.h */,
+				A593C5CB227CBD8E0010C002 /* Contato.m */,
+				A50BD723228099CA00501340 /* ContatoDAO.h */,
+				A50BD724228099CA00501340 /* ContatoDAO.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A593C5CD227CC7D10010C002 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A5066FFF227CB0DC00EF75F0 /* ViewController.h */,
+				A5067000227CB0DC00EF75F0 /* ViewController.m */,
+				A593C5CE227CC8200010C002 /* ListaDeContatosTableViewController.h */,
+				A593C5CF227CC8200010C002 /* ListaDeContatosTableViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A593C5CC227CBD8E0010C002 /* Contato.m in Sources */,
+				A593C5D0227CC8200010C002 /* ListaDeContatosTableViewController.m in Sources */,
 				A5067001227CB0DC00EF75F0 /* ViewController.m in Sources */,
 				A5067007227CB0DC00EF75F0 /* AgendaDeContatos.xcdatamodeld in Sources */,
+				A50BD725228099CA00501340 /* ContatoDAO.m in Sources */,
 				A506700F227CB0DF00EF75F0 /* main.m in Sources */,
 				A5066FFE227CB0DC00EF75F0 /* AppDelegate.m in Sources */,
 			);
